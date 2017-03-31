@@ -1,0 +1,290 @@
+﻿<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Segunda aplicacion movil</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app2.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+ </head>
+
+<body onLoad="MM_preloadImages('imagenes/sustitucion2.png','imagenes/susthis.jpg','imagenes/historia.png','imagenes/sustiticiontel.jpg','imagenes/companias.jpg','imagenes/sustituciongama2.jpg','imagenes/sustitucionfuturo.jpg','imagenes/sustitucionfuturo2.jpeg')">
+
+<div data-role="page"id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+  <h1>Telefonia Celular</h1>
+</div>
+<div data-role="main" class="ui-content">
+     
+</div>
+      <div>
+       <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+       <li class="ui-first-child ui-last-child"> 
+           <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>¿Qué es un telefono celular?</h2>
+              <p>Definición</p>
+           </a>
+</li>
+        <li class="ui-first-child ui-last-child">
+           <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Historia del telefono celular</h2>
+           <p>Muestra la historia del telefono celular</p>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Clasificacion de los celulares de acuerdo a su gama</h2>
+            <p>Clasificacion</p>
+      </a>
+</li>
+      <li class="ui-first-child ui-last-child">
+          <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Compañias en México que manejan el servicio de compañia celular</h2>
+           <p>Compañias de servicio celular</p>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+        <a href="#Pagina5" class"ui-btn ui-btn-icon-right ui-icon-cart-r">
+          <h2>Telefonos del futuro</H2>
+          <P>Muestra la tecnologia celular del futuro</P>
+       </a>
+</li>
+     </lu>
+   </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/logo.png" width="46" height="46">
+      </div>
+      <div>
+         <h4>Aplicacion dos</h4>
+         <h4> Oscar Jared Enriquez Lopez </h4>
+     </div>
+</div>
+      </div>
+<div data-role="page"id="Pagina1" data-add-back-btn="true" data-theme="b">
+        <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>¿Qué es un telefono celular?</h1>  
+       </div>
+       <div data-role="content" aling="center"> 
+        <div>
+          <h2>Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que              conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse              desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara              fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.</h2>
+          <h2><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('definicon','','imagenes/sustitucion2.png',1)"><img src="imagenes/sustitucion.png" width="256" height="256" id="definicon"></a></h2>
+        </div>
+  </div>
+             <div data-role="collapsible" data-content-theme="false">
+       <h1>Celular:</h1>
+       <div>
+          <p>samsung galaxy s6 edge</p>
+         <br> 
+      </div>
+      <div>
+        <p><img src="imagenes/definicion.png" width="292" height="305"></p>
+      </div>
+       </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+         <h4>Aplicacion dos, OJEL </h4>
+        </div>
+</div>
+     
+
+<div data-role="page"id="Pagina2" data-add-back-btn="true" data-theme="c">
+        <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+         <h1>Historia del telefono celular</h1>  
+       </div>
+       <div data-role="content" aling="center"> 
+        <div>
+          <h2>La telefonía móvil o celular se conoce desde mediados del siglo XX, aunque no fue hasta los años setenta que poco a poco comenzó a extenderse, primeramente a precios muy altos y con              equipos rudimentarios.<p>
+              En 1947, AT&T ideó un novedoso sistema, basado en muchos transmisores pequeños y formar con ellos una red, en lugar de un potente transmisor ubicado en una altura. Para la consecución              de este objetivo la AT&T solicitó a la Comisión Federal de Comunicaciones (FCC), un permiso para desarrollar el sistema de telefonía móvil, esta solicitud fue denegada.
+            <p>Un teléfono móvil de última generación permite no solo realizar llamadas, sino reproducir música y vídeos, tomar fotos y pequeñas películas, transmitir lo grabado, así como consultar              Internet, enviar y recibir correos electrónicos, mensajes de texto y gráficos, contienen prestaciones como agenda personal y calculadora, juegos electrónicos e incluso ya se puede ver              por ellos televisión digital.            
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('historia','','imagenes/susthis.jpg',1)"><img src="imagenes/historia.png" width="287" height="206" id="historia"></a>
+            <div data-role="collapsible" data-content-theme="false">
+       <h1>Celular:</h1>
+       <div>
+          <p>primer telefono</p>
+         <br> 
+      </div>
+      <div>
+        <p><img src="imagenes/primertelefono.jpg" width="292" height="305"></p>
+      </div>
+       </div>                                   
+          </h2></div>
+  </div>
+        <div data-role="footer" data-theme="c" data-position="fixed">
+         <h4>Aplicacion dos, OJEL</h4>
+      </div>
+</div>
+     
+ 
+<div data-role="page"id="Pagina3" data-add-back-btn="true" data-theme="d">
+        <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+           <H1>Clasificacion de los celulares de acuerdo a su gama</h1>
+        </div>
+        <div data-role="content" aling="center">
+          <div>
+            <h1><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gama','','imagenes/sustituciongama2.jpg',1)"><img src="imagenes/sustituciongama.jpg" name="gama" width="300" height="236" id="gama"></a></h1>
+            <h1>Gama Baja</h1>
+            <br>
+          <h2>En esta categoría distribuiremos los celulares inteligentes con plataformas que no dan soporte a muchas utilidades que tienen los teléfonos de otras gamas. Sus pantallas son de escasas dimensiones y resolución, poca memoria RAM y mínima capacidad de almacenamiento interno, cámaras VGA,menores herramientas, acceso a redes y aplicaciones, entre otros aspectos. </h2>
+               <div data-role="collapsible" data-content-theme="false">
+       <h1>Celulares gama baja</h1>
+          <p><h2>Nokia lumia 505--------Samsung Galaxy fame</h2></p>
+         <br> 
+      <div>
+        <img src="imagenes/gamabaja.png" width="62" height="116">
+          <img src="imagenes/gamabaja2.png" width="88" height="118" alt="gama baja "></div>
+       </div>
+          <h1>Gama Media</h1>
+          <br>
+          <h2>Los smartphones de media gama se caracterizan por tener pantallas de calidad, pero de menor tamaño, resolución y profundidad de pixeles por pulgada; en la mayoría de los casos funcionan con una versión anterior a la más actual de su sistema operativo; los procesadores no tienen la potencia de los que encontramos en gamas superiores, y las cámaras y fotográficas generalmente cuentan con menos cantidad de megapíxeles.</h2>
+          <div data-role="collapsible" data-content-theme="false">
+       <h1>Celulares gama media</h1>
+          <p><h2>iPhone 4--------Sony Xperia Z</h2></p>
+         <br> 
+      <div>
+        <img src="imagenes/gamamedia.png" width="73" height="120">
+          <img src="imagenes/gamamedia2.png" width="101" height="129" alt="gama baja "></div>
+       </div>
+          <h1>Gama Alta</h1>
+          <br>
+          <h2>En este nivel encajan los smartphones que estén dotados con casi todos los elementos más evolucionados, algunas caracteristicas son: sus pantallas de 4 pulgadas en adelante, memoria interta desde 16GB, Diseñados para redes 4G, camar de alta calidad desde 10mpx, comunmente son muy delgados, </h2>
+          <div data-role="collapsible" data-content-theme="false">
+       <h1>Celulares gama alta</h1>
+          <p><h2>iPhone 7--------Samsung Galaxy s7 edge</h2></p>
+         <br> 
+      <div>
+        <img src="imagenes/gamaalta.png" width="76" height="136">
+          <img src="imagenes/gamaalta2.png" width="84" height="126" alt="gama baja "></div>
+          </div>
+       </div>
+          <div data-role="footer" data-theme="d" data-position="fixed">
+             <h4>Aplicacion dos, OJEL</h4>
+         </div>
+  </div>
+</div>
+</div>
+         
+        
+<div data-role="page" id="Pagina4"  data-add-back-btn="true" data-theme="e">
+         <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="e">
+          <h1>Compañias en México que manejan el servicio de compañia celular</H1>
+         </div>
+           <div data-role="content" aling="center">
+             <div>
+              <h2>Las operadoras de telefonia movil mas populares en México son las siguientes: 
+              <div data-role="collapsible" data-content-theme="false">
+       <h1>Compañias</h1>
+          <p><h2>compañias en México</h2></p>
+         <br> 
+      <div>
+        <img src="imagenes/companias.jpg" width="273" height="177">
+        </div>
+       </div>
+              <p>
+              AT&T México, es una empresa mexicana de telecomunicaciones, subsidiaria de la empresa estadounidense AT&T, cuya sede se encuentra en la Ciudad de México. Entre sus principales servicios está la telefonía móvil, el internet móvil, servicios de banda ancha móvil, entre otros.              
+                <p><a href="https://www.att.com.mx" target="_blank">https://www.att.com.mx</a>                                              
+               </h2>
+              <p><center>
+              </center>
+              </p>
+              <h2>&nbsp;</h2>
+              <h2><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('companias','','imagenes/historia.png',1)"><center>
+                <p><img src="imagenes/susthis.jpg" width="270" height="176" id="companias"></p>
+              </center>
+              </a></h2>
+              <h2>
+               <p>Telcel es una marca propiedad de la empresa mexicana Radiomóvil DIPSA, S.A. de C.V.. Tiene presencia en todo México y se dedica a ofrecer servicios de telefonía móvil, telefonía fija, servicios de banda ancha, entre otros servicios. Es subsidiaria de la empresa mexicana América Móvil
+                 </p>
+               <p><a href="http://www.telcel.com/" target="new">http://www.telcel.com/</a><a href="http://www.telcel.com/"></a>                             </h2>
+                <center>
+                  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('companias1','','imagenes/sustiticiontel.jpg',1)"><img src="imagenes/Telcel.png" width="300" height="161" id="companias1"></a>
+                </center></p>
+                <p>
+                <h2>Movistar México, es una empresa proveedora de servicios de telefonía móvil en México, subsidiaria del Grupo Telefónica y su División Telefónica Móviles.
+                  </p></h2>
+                <h2><a href="https://www.movistar.com.mx/" target="_blank">https://www.movistar.com.mx/</a><a href="https://www.movistar.com.mx/"></a>
+               <p></h2>
+                <center>
+                  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('compania2','','imagenes/companias.jpg',1)"><img src="imagenes/movistar.png" name="compania2" width="321" height="179" id="compania2"></a>
+                </center></p>
+             </div>
+       </div>
+          <div data-role="footer" data-theme="e" data-position="fixed">
+         <h4>Aplicacion dos, OJEL</h4>
+         </div>
+</div>
+         
+        
+         <div data-role="page" id="Pagina5"  data-add-back-btn="true" data-theme="f">
+<div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="f">
+           <h1>Telefonos del futuro</h1>
+</div>
+<div data-role="content" aling="center">
+            <div>
+              <h2>Telefonos Futuristicos</h2>
+              <div data-role="collapsible" data-content-theme="false">
+       <h1>Celulares futuristicos</h1>
+          <p><h2>Pulsera celular</h2></p>
+         <br> 
+      <div>
+        <img src="imagenes/futurocolap.png" width="199" height="222">
+          </div>
+       </div>
+              <table width="344" height="93" border="0">
+                <tr>
+                  <td width="192"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('futuro1','','imagenes/sustitucionfuturo.jpg',1)"><img src="imagenes/futuro.png" width="192" height="289" id="futuro1"></a></td>
+                  <td width="142"><p>El Turing Phone Cadenza tendría dos procesadores Snapdragon 830 de ocho núcleos (para un total de 16). Este es un procesador que aún no ha salido al mercado y supondrá la evolución del Snapdragon 820. Tendría una memoria RAM de 12 GB.</p>
+                    <p>En su parte trasera habrá una cámara de cuatro lentes que captará imágenes a 60 MP y tendrá la capacidad de grabar video a 6K con calidad iMax. Asimismo, dispondrá de una cámara frontal de dos lentes con un sensor de 20 MP.</p></td>
+                </tr>
+              </table>
+              <table width="345" height="398" border="0">
+                <tr>
+                  <td width="194" height="257"><p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('futuro2','','imagenes/sustitucionfuturo2.jpeg',1)"><img src="imagenes/futuro2.jpg" width="194" height="248" id="futuro2"></a></p></td>
+                  <td width="141"><p>Este dispositivo no tendría dos sino tres procesadores Snapdragon 830. Es decir, dispondría de 24 núcleos. Su memoria RAM aumentaría a 18 GB.</p>
+                    <p>La cámara sería igual a la del modelo Cadenza, pero la capacidad de almacenamiento llegaría hasta 1,2 TB, virtud de 768 GB de base, expandibles gracias a dos ranuras para memorias MicroSD con capacidad de hasta 256 GB. </p>
+                  <p>Su pantalla promete ser de 6,4 pulgadas con una resolución de 3.820 por 2.160 píxeles (es decir, 4K). Contaría protección contra golpes y arañazos</p></td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+         </div>
+      <div data-role="footer" data-theme="f" data-position="fixed">
+         <h4>Aplicacion dos, OJEL</h4>
+  </div>
+</div>
+       
+         
+         
+</body>
+</html>
